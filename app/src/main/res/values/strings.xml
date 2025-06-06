@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">EnglishApp</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="menu">Menu</string>
+    <string name="colores">Colores</string>
+    <string name="animales">Animales</string>
+    <string name="frutas">Frutas</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="yellow">Yellow</string>
+    <string name="coconut">Coconut</string>
+    <string name="carrot">Carrot</string>
+    <string name="cabbage">Cabbage</string>
+    <string name="monkey">Monkey</string>
+    <string name="donkey">Donkey</string>
+    <string name="elephant">Elephant</string>
+    <string name="atras">Atras</string>
+    <string name="jugar">Jugar</string>
+    <string name="apreder">Aprender</string>
+    <string name="pregunta_1">Pregunta 1</string>
+    <string name="pregunta_2">Pregunta 2</string>
+    <string name="enunciado_1">Cual es Coconut?</string>
+    <string name="enunciado_2">Cual es Red?</string>
+    <string name="pregunta_3">Pregunta 3</string>
+    <string name="enunciado_3">Cual es Carrot?</string>
+    <string name="pregunta_4">Pregunta 4</string>
+    <string name="enunciado_4">Cual es Blue?</string>
+    <string name="pregunta_5">Pregunta 5</string>
+    <string name="enunciado_5">Cual es Elephant?</string>
+    <string name="felicitaicon">Felicitaciones por completar!!!</string>
+    <string name="volver_inicio">Volver a inicio</string>
+
+
+</resources>

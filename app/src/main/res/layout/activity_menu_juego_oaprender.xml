@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuJuegoOAprender"
+    android:background="@color/primario"
+    android:orientation="vertical">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/animacion"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <Button
+        android:id="@+id/btnAprender"
+        android:layout_marginTop="125dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/apreder"
+        android:backgroundTint="@color/naranja"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/btnJugar"
+        android:layout_marginTop="50dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/jugar"
+        android:backgroundTint="@color/azul"
+        android:layout_gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/tvApodoUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="36dp"
+        />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primario"
+    tools:context=".ColoresLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="@string/animales"
+        android:layout_marginTop="75dp"
+        android:layout_gravity="center"
+        android:textColor="@color/texto"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imgElefante"
+            android:layout_width="165dp"
+            android:layout_height="112dp"
+            android:src="@drawable/elephan" />
+        <Button
+            android:id="@+id/btnElefante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/elephant"
+            android:backgroundTint="@color/gris"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/texto"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imgMono"
+            android:layout_width="156dp"
+            android:layout_height="112dp"
+            android:src="@drawable/monkey" />
+        <Button
+            android:id="@+id/btnMono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monkey"
+            android:backgroundTint="@color/cafe"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/texto"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imgBurro"
+            android:layout_width="156dp"
+            android:layout_height="100dp"
+            android:src="@drawable/donkey" />
+        <Button
+            android:id="@+id/btnBurro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donkey"
+            android:backgroundTint="@color/cafeClarito"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:textSize="20sp"
+            android:textColor="@color/texto"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/atras"
+        android:backgroundTint="@color/acento"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:textColor="@color/texto"
+        android:textSize="23sp"
+
+        />
+
+</LinearLayout>

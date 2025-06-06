@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primario"
+    tools:context=".Resultados_Jugar">
+
+    <TextView
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="100dp"
+        android:textAlignment="center"
+        android:text="@string/felicitaicon"
+        android:textSize="60dp" />
+    <Button
+        android:id="@+id/btnVerPuntuacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/acento"
+        android:text="Ver puntuacion."
+        android:textColor="@color/texto"
+        android:textSize="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btnlVolverInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/acento"
+        android:text="@string/volver_inicio"
+        android:textColor="@color/texto"
+        android:textSize="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

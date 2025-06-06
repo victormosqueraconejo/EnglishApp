@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primario">  #DAF7A6</color>
+    <color name="secundario"> #8BC34A</color>
+    <color name="fondo"> #F7F7F7</color>
+    <color name="texto"> #333333</color>
+    <color name="acento"> #FFC107</color>
+    <color name="azul">#3F51B5</color>
+    <color name="red">#F4041D</color>
+    <color name="naranja">#FF5722</color>
+    <color name="cafe">#804000</color>
+    <color name="cafeClarito">#BA6109</color>
+    <color name="gris">#7E7A7A</color>
+
+
+
+</resources>

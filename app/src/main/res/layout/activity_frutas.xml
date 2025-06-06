@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primario"
+    tools:context=".ColoresLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="@string/frutas"
+        android:layout_marginTop="75dp"
+        android:layout_gravity="center"
+        android:textColor="@color/texto"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imgZanahoria"
+            android:layout_width="165dp"
+            android:layout_height="112dp"
+            android:src="@drawable/carrot" />
+        <Button
+            android:id="@+id/btnZanahoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carrot"
+            android:backgroundTint="@color/naranja"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/texto"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imgCoco"
+            android:layout_width="156dp"
+            android:layout_height="112dp"
+            android:src="@drawable/coconut" />
+        <Button
+            android:id="@+id/btnCoco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coconut"
+            android:backgroundTint="@color/cafe"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/texto"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imgLechuga"
+            android:layout_width="156dp"
+            android:layout_height="100dp"
+            android:src="@drawable/repollo" />
+        <Button
+            android:id="@+id/btnLechuga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cabbage"
+            android:backgroundTint="@color/secundario"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:textSize="20sp"
+            android:textColor="@color/texto"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/atras"
+        android:backgroundTint="@color/acento"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:textColor="@color/texto"
+        android:textSize="23sp"
+
+        />
+
+</LinearLayout>
