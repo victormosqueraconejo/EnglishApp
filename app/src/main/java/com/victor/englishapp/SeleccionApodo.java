@@ -48,6 +48,8 @@ public class SeleccionApodo extends AppCompatActivity {
                 startActivity(irSiguiente);
             }
         });
+
+
         btnSiguiente4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
