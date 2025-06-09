@@ -16,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Jugar extends AppCompatActivity {
     public static int puntos = 0;
+    public static String[] arrayPreguntas = {"0", "0", "0", "0", "0"};
 
     TextView puntuacionActual;
     ImageView imgCoco2;
@@ -23,10 +24,7 @@ public class Jugar extends AppCompatActivity {
     ImageView imgElefante2;
     ImageView imgZanahoria2;
 
-    MediaPlayer sonidoLechuga2;
-    MediaPlayer sonidoCoco2;
-    MediaPlayer sonidoElefante2;
-    MediaPlayer sonidoZanahoria2;
+    MediaPlayer sonidoBien, sonidoMal;
     Button btnSiguienete;
  @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,16 +39,21 @@ public class Jugar extends AppCompatActivity {
         btnSiguienete = findViewById(R.id.btnSiguiente2);
         puntuacionActual = findViewById(R.id.tvPuntuacionActual);
         puntuacionActual.setText("Puntuacion Actual: " + puntos);
+        sonidoBien = MediaPlayer.create(Jugar.this, R.raw.bien);
+        sonidoMal = MediaPlayer.create(Jugar.this, R.raw.mal);
+        Intent irASiguiente2 = new Intent(Jugar.this, Pregunta_2.class);
+
 
         imgCoco2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sonidoCoco2 = MediaPlayer.create(Jugar.this, R.raw.bien);
-                sonidoCoco2.start();
 
-                Intent siguietePregunta = new Intent(Jugar.this, Pregunta_2.class);
-                startActivity(siguietePregunta);
+                sonidoBien.start();
+
+                startActivity(irASiguiente2);
                 puntos += 20;
+                arrayPreguntas[0] = "1";
+
 
             }
         });
@@ -58,27 +61,30 @@ public class Jugar extends AppCompatActivity {
         imgLechuga2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sonidoLechuga2 = MediaPlayer.create(Jugar.this, R.raw.mal);
-                sonidoLechuga2.start();
+                sonidoMal.start();
                 puntos -= 10;
+                startActivity(irASiguiente2);
+
             }
         });
 
         imgElefante2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sonidoElefante2 = MediaPlayer.create(Jugar.this, R.raw.mal);
-                sonidoElefante2.start();
+                sonidoMal.start();
                 puntos -= 10;
+                startActivity(irASiguiente2);
+
             }
         });
 
         imgZanahoria2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sonidoZanahoria2 = MediaPlayer.create(Jugar.this, R.raw.mal);
-                sonidoZanahoria2.start();
+                sonidoMal.start();
                 puntos -= 10;
+                startActivity(irASiguiente2);
+
             }
         });
 
@@ -87,6 +93,7 @@ public class Jugar extends AppCompatActivity {
          public void onClick(View v) {
              Intent irASiguiente2 = new Intent(Jugar.this, Pregunta_2.class);
              startActivity(irASiguiente2);
+
          }
      });
 

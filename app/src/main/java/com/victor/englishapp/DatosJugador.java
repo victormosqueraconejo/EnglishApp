@@ -33,6 +33,7 @@ public class DatosJugador extends AppCompatActivity {
                 Intent irSiguiente = new Intent(DatosJugador.this, SeleccionApodo.class);
                 irSiguiente.putExtra("nombre", entradaNombre.getText().toString());
                 startActivity(irSiguiente);
+
             }
         });
     }

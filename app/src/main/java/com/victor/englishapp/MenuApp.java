@@ -33,6 +33,7 @@ public class MenuApp extends AppCompatActivity {
                 Intent irAColores = new Intent( MenuApp.this, ColoresLayout.class);
 
                 startActivity(irAColores);
+
             }
         });
 
@@ -41,6 +42,7 @@ public class MenuApp extends AppCompatActivity {
             public void onClick(View v) {
                 Intent irAFrutas = new Intent(MenuApp.this , Frutas.class);
                 startActivity(irAFrutas);
+
             }
         });
 
@@ -49,6 +51,7 @@ public class MenuApp extends AppCompatActivity {
             public void onClick(View v) {
                 Intent irAAnimales = new Intent(MenuApp.this , Animales.class);
                 startActivity(irAAnimales);
+
             }
         });
 

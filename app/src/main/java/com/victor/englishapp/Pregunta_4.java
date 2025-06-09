@@ -38,22 +38,16 @@ public class Pregunta_4 extends AppCompatActivity {
         imgCarrot = findViewById(R.id.imgCarrot5);
         puntuacionActual = findViewById(R.id.tvPuntuacionActual4);
         puntuacionActual.setText("Puntuacion Actual: " + Jugar.puntos);
+        Intent siguietePregunta = new Intent(Pregunta_4.this, Pregunta_5.class);
+
 
         imgBlue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 sonidoBien.start();
-                Intent siguietePregunta = new Intent(Pregunta_4.this, Pregunta_5.class);
-                startActivity(siguietePregunta);
+                Jugar.arrayPreguntas[3] = "1";
                 Jugar.puntos += 20;
-            }
-        });
-
-        imgYellow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sonidoMal.start();
-                Jugar.puntos -= 10;
+                startActivity(siguietePregunta);
             }
         });
 
@@ -62,6 +56,8 @@ public class Pregunta_4 extends AppCompatActivity {
             public void onClick(View v) {
                 sonidoMal.start();
                 Jugar.puntos -= 10;
+                startActivity(siguietePregunta);
+
             }
         });
 
@@ -70,6 +66,16 @@ public class Pregunta_4 extends AppCompatActivity {
             public void onClick(View v) {
                 sonidoMal.start();
                 Jugar.puntos -= 10;
+                startActivity(siguietePregunta);
+
+            }
+        });
+        imgYellow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sonidoMal.start();
+                Jugar.puntos -= 10;
+                startActivity(siguietePregunta);
             }
         });
 

@@ -39,14 +39,17 @@ public class Pregunta_5 extends AppCompatActivity {
         imgMonkey = findViewById(R.id.imgMonkey5);
         puntuacionActual = findViewById(R.id.tvPuntuacionActual5);
         puntuacionActual.setText("Puntuacion Actual: " + Jugar.puntos);
+        Intent siguietePregunta = new Intent(Pregunta_5.this, Resultados_Jugar.class);
+
 
         imgElephan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 sonidoBien.start();
-                Intent siguietePregunta = new Intent(Pregunta_5.this, Resultados_Jugar.class);
-                startActivity(siguietePregunta);
+                Jugar.arrayPreguntas[4] = "1";
                 Jugar.puntos += 20;
+                startActivity(siguietePregunta);
+
             }
         });
 
@@ -55,6 +58,8 @@ public class Pregunta_5 extends AppCompatActivity {
             public void onClick(View v) {
                 sonidoMal.start();
                 Jugar.puntos -= 10;
+                startActivity(siguietePregunta);
+
             }
         });
         imgMonkey.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +67,8 @@ public class Pregunta_5 extends AppCompatActivity {
             public void onClick(View v) {
                 sonidoMal.start();
                 Jugar.puntos -= 10;
+                startActivity(siguietePregunta);
+
             }
         });
         imgRepollo.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +76,8 @@ public class Pregunta_5 extends AppCompatActivity {
             public void onClick(View v) {
                 sonidoMal.start();
                 Jugar.puntos -= 10;
+                startActivity(siguietePregunta);
+
             }
         });
     }

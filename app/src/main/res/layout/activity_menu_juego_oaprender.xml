@@ -27,6 +27,15 @@
         android:layout_gravity="center" />
 
     <Button
+        android:id="@+id/btnDiccionario"
+        android:layout_marginTop="50dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Diccionario"
+        android:backgroundTint="@color/secundario"
+        android:layout_gravity="center" />
+
+    <Button
         android:id="@+id/btnJugar"
         android:layout_marginTop="50dp"
         android:layout_width="250dp"

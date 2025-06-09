@@ -32,6 +32,37 @@
         android:backgroundTint="@color/secundario"
         android:text="@string/siguiente" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginVertical="100dp"
+    >
+        <ImageView
+        android:id="@+id/ivFacebookLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/facebooklogo"
+            android:layout_marginLeft="75dp"
+        />
+        <ImageView
+            android:id="@+id/ivInstagramLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/intagramlogo"
+            android:layout_marginLeft="50dp"
+            />
+
+        <ImageView
+            android:id="@+id/ivRedditLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/redditlogo"
+            android:layout_marginLeft="50dp"
+            />
+
+    </LinearLayout>
+
 
 
 </LinearLayout>

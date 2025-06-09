@@ -56,6 +56,7 @@ public class SeleccionApodo extends AppCompatActivity {
                 apodoSeleccionado = apodoJugadorEntrada.getText().toString();
                 Intent irSiguiente = new Intent(SeleccionApodo.this, MenuJuegoOAprender.class);
                 startActivity(irSiguiente);
+
             }
         });
 

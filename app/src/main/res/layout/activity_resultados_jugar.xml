@@ -10,18 +10,30 @@
     tools:context=".Resultados_Jugar">
 
     <TextView
+        android:id="@+id/txtMensajeFelicitacion"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="100dp"
         android:textAlignment="center"
-        android:text="@string/felicitaicon"
+        android:text="!Felicidades por completar!!!"
         android:textSize="60dp" />
+    <Button
+        android:id="@+id/btnVerPreguntas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/naranja"
+        android:text="Ver preguntas."
+        android:textColor="@color/texto"
+        android:textSize="32dp"
+        android:layout_gravity="center"
+        />
+
     <Button
         android:id="@+id/btnVerPuntuacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/acento"
+        android:backgroundTint="@color/azul"
         android:text="Ver puntuacion."
         android:textColor="@color/texto"
         android:textSize="32dp"
@@ -33,7 +45,7 @@
         android:id="@+id/btnlVolverInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/acento"
+        android:backgroundTint="@color/secundario"
         android:text="@string/volver_inicio"
         android:textColor="@color/texto"
         android:textSize="32dp"

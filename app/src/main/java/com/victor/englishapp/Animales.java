@@ -51,6 +51,7 @@ public class Animales extends AppCompatActivity {
             public void onClick(View v) {
                 soundMonkey = MediaPlayer.create(Animales.this, R.raw.monkey);
                 soundMonkey.start();
+
             }
         });
 

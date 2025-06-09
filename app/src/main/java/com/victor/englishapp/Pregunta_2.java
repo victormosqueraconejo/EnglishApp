@@ -21,10 +21,8 @@ public class Pregunta_2 extends AppCompatActivity {
     ImageView ImgBlue2;
     ImageView ImgYellow2;
 
-    MediaPlayer sonidoRed2;
-    MediaPlayer sonidoZanahoria3;
-    MediaPlayer sonidoBlue2;
-    MediaPlayer sonidoYellow2;
+    MediaPlayer sonidoMal, sonidoBien;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,13 +36,16 @@ public class Pregunta_2 extends AppCompatActivity {
         ImgRed2 = findViewById(R.id.imgRed2);
         puntuacionActual = findViewById(R.id.tvPuntuacionActual2);
         puntuacionActual.setText("Puntuacion Actual: " + Jugar.puntos);
+        sonidoMal = MediaPlayer.create(Pregunta_2.this, R.raw.mal);
+        sonidoBien = MediaPlayer.create(Pregunta_2.this, R.raw.bien);
+        Intent siguietePregunta = new Intent(Pregunta_2.this, Pregunta_3.class);
 
         ImgYellow2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sonidoYellow2 = MediaPlayer.create(Pregunta_2.this, R.raw.mal);
-                sonidoYellow2.start();
+                sonidoMal.start();
                 Jugar.puntos -= 10;
+                startActivity(siguietePregunta);
 
             }
         });
@@ -52,34 +53,30 @@ public class Pregunta_2 extends AppCompatActivity {
         ImgZanahoria3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sonidoZanahoria3 = MediaPlayer.create(Pregunta_2.this, R.raw.mal);
-                sonidoZanahoria3.start();
+                sonidoMal.start();
                 Jugar.puntos -= 10;
+                startActivity(siguietePregunta);
 
             }
         });
         ImgBlue2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sonidoBlue2 = MediaPlayer.create(Pregunta_2.this, R.raw.mal);
-                sonidoBlue2.start();
+                sonidoMal.start();
                 Jugar.puntos -= 10;
+                startActivity(siguietePregunta);
             }
         });
         ImgRed2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sonidoRed2 = MediaPlayer.create(Pregunta_2.this, R.raw.bien);
-                sonidoRed2.start();
-
-                Intent siguietePregunta = new Intent(Pregunta_2.this, Pregunta_3.class);
-                startActivity(siguietePregunta);
+                sonidoBien.start();
                 Jugar.puntos += 20;
+                Jugar.arrayPreguntas[1] = "1";
+                startActivity(siguietePregunta);
+
             }
         });
-
-
-
 
     }
 }

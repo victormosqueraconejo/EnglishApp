@@ -38,14 +38,17 @@ public class Pregunta_3 extends AppCompatActivity {
         sonidoBien = MediaPlayer.create(Pregunta_3.this, R.raw.bien);
         sonidoMal = MediaPlayer.create(Pregunta_3.this, R.raw.mal);
 
+        Intent siguietePregunta = new Intent(Pregunta_3.this, Pregunta_4.class);
+
+
 
         ImgCarrot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
             sonidoBien.start();
-                Intent siguietePregunta = new Intent(Pregunta_3.this, Pregunta_4.class);
-                startActivity(siguietePregunta);
+                Jugar.arrayPreguntas[2] = "1";
                 Jugar.puntos += 20;
+                startActivity(siguietePregunta);
 
             }
         });
@@ -54,6 +57,8 @@ public class Pregunta_3 extends AppCompatActivity {
             public void onClick(View v) {
             sonidoMal.start();
                 Jugar.puntos -= 10;
+                startActivity(siguietePregunta);
+
             }
 
         });
@@ -62,6 +67,8 @@ public class Pregunta_3 extends AppCompatActivity {
             public void onClick(View v) {
                 sonidoMal.start();
                 Jugar.puntos -= 10;
+                startActivity(siguietePregunta);
+
             }
         });
         ImgMonkey.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +76,8 @@ public class Pregunta_3 extends AppCompatActivity {
             public void onClick(View v) {
                 sonidoMal.start();
                 Jugar.puntos -= 10;
+                startActivity(siguietePregunta);
+
             }
         });
 

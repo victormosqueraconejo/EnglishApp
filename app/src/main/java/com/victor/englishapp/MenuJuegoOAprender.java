@@ -14,8 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MenuJuegoOAprender extends AppCompatActivity {
 
-    Button btnAprender;
-    Button btnJugar;
+    Button btnJugar, btnAprender, btnDiccionario;
 
     TextView tvApodoJugador;
     @Override
@@ -25,6 +24,7 @@ public class MenuJuegoOAprender extends AppCompatActivity {
         setContentView(R.layout.activity_menu_juego_oaprender);
         btnAprender = findViewById(R.id.btnAprender);
         btnJugar = findViewById(R.id.btnJugar);
+        btnDiccionario = findViewById(R.id.btnDiccionario);
         tvApodoJugador = findViewById(R.id.tvApodoUsuario);
 
         tvApodoJugador.setText("¡Bienvenido " + SeleccionApodo.apodoSeleccionado + "!");
@@ -35,6 +35,15 @@ public class MenuJuegoOAprender extends AppCompatActivity {
                 Intent irAAprender = new Intent( MenuJuegoOAprender.this, MenuApp.class);
 
                 startActivity(irAAprender);
+
+            }
+        });
+
+        btnDiccionario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent irADiccionario = new Intent(MenuJuegoOAprender.this, Diccionario.class);
+                startActivity(irADiccionario);
             }
         });
 
@@ -44,8 +53,10 @@ public class MenuJuegoOAprender extends AppCompatActivity {
                 Intent irAJugar = new Intent( MenuJuegoOAprender.this, Jugar.class);
 
                 startActivity(irAJugar);
+
             }
         });
+
 
 
 

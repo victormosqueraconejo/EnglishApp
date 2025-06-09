@@ -41,6 +41,7 @@ public class ColoresLayout extends AppCompatActivity {
             public void onClick(View v) {
                 suondYellow = MediaPlayer.create(ColoresLayout.this, R.raw.yellow);
                 suondYellow.start();
+
             }
         });
 
@@ -49,6 +50,7 @@ public class ColoresLayout extends AppCompatActivity {
             public void onClick(View v) {
                 suondYellow = MediaPlayer.create(ColoresLayout.this, R.raw.yellow);
                 suondYellow.start();
+
             }
         });
 
@@ -58,6 +60,7 @@ public class ColoresLayout extends AppCompatActivity {
             public void onClick(View v) {
                 suondBlue = MediaPlayer.create(ColoresLayout.this, R.raw.blue);
                 suondBlue.start();
+
             }
         });
 
@@ -66,6 +69,7 @@ public class ColoresLayout extends AppCompatActivity {
             public void onClick(View v) {
                 suondBlue = MediaPlayer.create(ColoresLayout.this, R.raw.blue);
                 suondBlue.start();
+
             }
         });
 
@@ -75,6 +79,7 @@ public class ColoresLayout extends AppCompatActivity {
             public void onClick(View v) {
                 suondRed = MediaPlayer.create(ColoresLayout.this, R.raw.red);
                 suondRed.start();
+
             }
         });
 
