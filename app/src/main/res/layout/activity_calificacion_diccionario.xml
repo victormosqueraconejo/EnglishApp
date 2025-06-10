@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primario"
+    tools:context=".CalificacionDiccionario">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calificacion de Diccionario"
+        android:textSize="36dp"
+        android:textAlignment="center"
+        android:layout_margin="25dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Las palabras fueron de utilidad?"
+        android:textSize="24dp"
+        android:layout_margin="20dp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <RadioButton
+            android:textSize="18dp"
+            android:text="Si, fueron muy utiles."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:textSize="18dp"
+            android:text="Podrian ser mejores."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:textSize="18dp"
+            android:text="No me fueron utiles."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Que idiomas quieres que agreguemos?"
+        android:textSize="24dp"
+        android:layout_margin="20dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frances"
+        android:textSize="18dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Japones"
+        android:textSize="18dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ruso"
+        android:textSize="18dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Otros"
+        android:textSize="18dp"
+        />
+
+    <Button
+        android:id="@+id/btnDiccionarioAInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar al Inicio"
+        android:backgroundTint="@color/secundario"
+        android:layout_margin="25dp"
+        android:layout_gravity="center"
+        />
+
+
+
+
+</LinearLayout>
