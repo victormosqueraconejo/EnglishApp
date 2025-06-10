@@ -1,5 +1,6 @@
 package com.victor.englishapp;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -15,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class ColoresLayout extends AppCompatActivity {
 
     Button btnYellow;
-    Button btnBlue;
+    Button btnBlue, btnRegresar;
     Button btnRed;
 
     ImageView imgAzul;
@@ -35,6 +36,7 @@ public class ColoresLayout extends AppCompatActivity {
         btnYellow = findViewById(R.id.btnAmarillo);
         btnBlue = findViewById(R.id.btnAzul);
         btnRed = findViewById(R.id.btnRojo);
+        btnRegresar = findViewById(R.id.btnColoresMenuApp);
 
         btnYellow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +82,14 @@ public class ColoresLayout extends AppCompatActivity {
                 suondRed = MediaPlayer.create(ColoresLayout.this, R.raw.red);
                 suondRed.start();
 
+            }
+        });
+
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent regresar = new Intent(ColoresLayout.this, MenuApp.class);
+                startActivity(regresar);
             }
         });
 

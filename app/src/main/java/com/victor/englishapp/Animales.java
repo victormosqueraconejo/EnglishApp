@@ -1,5 +1,6 @@
 package com.victor.englishapp;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class Animales extends AppCompatActivity {
     Button btnElephant;
     Button btnMonkey;
-    Button btnDonkey;
+    Button btnDonkey, btnRegresar;
 
     MediaPlayer soundElephant;
     MediaPlayer soundMonkey;
@@ -29,6 +30,7 @@ public class Animales extends AppCompatActivity {
         btnElephant = findViewById(R.id.btnElefante);
         btnDonkey = findViewById(R.id.btnBurro);
         btnMonkey = findViewById(R.id.btnMono);
+        btnRegresar = findViewById(R.id.btnAnimalesAMenuApp);
 
         btnElephant.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +54,14 @@ public class Animales extends AppCompatActivity {
                 soundMonkey = MediaPlayer.create(Animales.this, R.raw.monkey);
                 soundMonkey.start();
 
+            }
+        });
+
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent regresar = new Intent(Animales.this, MenuApp.class);
+                startActivity(regresar);
             }
         });
 

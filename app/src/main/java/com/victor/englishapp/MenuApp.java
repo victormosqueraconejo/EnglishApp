@@ -15,7 +15,7 @@ public class MenuApp extends AppCompatActivity {
 
     Button btnColores;
     Button btnAnimales;
-    Button btnFrutas;
+    Button btnFrutas, btnAtras;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class MenuApp extends AppCompatActivity {
         btnColores = findViewById(R.id.btnColores);
         btnFrutas = findViewById(R.id.btnFrutas);
         btnAnimales = findViewById(R.id.btnAnimales);
+        btnAtras = findViewById(R.id.btnMenuSeleccionCatAMenuApp);
 
         btnColores.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +53,13 @@ public class MenuApp extends AppCompatActivity {
                 Intent irAAnimales = new Intent(MenuApp.this , Animales.class);
                 startActivity(irAAnimales);
 
+            }
+        });
+        btnAtras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent regresar = new Intent(MenuApp.this, MenuJuegoOAprender.class);
+                startActivity(regresar);
             }
         });
 

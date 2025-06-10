@@ -1,5 +1,6 @@
 package com.victor.englishapp;
 
+import android.content.Intent;
 import android.media.MediaParser;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -16,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class Frutas extends AppCompatActivity {
     Button btnCarrot;
     Button btnCoco;
-    Button btnLechuga;
+    Button btnLechuga, btnRegresar;
     ImageView imgCarrot;
     MediaPlayer sonidoZanahoria;
     MediaPlayer sonidoCoco;
@@ -31,6 +32,7 @@ public class Frutas extends AppCompatActivity {
         btnCarrot = findViewById(R.id.btnZanahoria);
         btnLechuga = findViewById(R.id.btnLechuga);
         btnCoco = findViewById(R.id.btnCoco);
+        btnRegresar = findViewById(R.id.btnFrutasAMenuApp);
 
         btnCarrot.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +58,12 @@ public class Frutas extends AppCompatActivity {
             }
         });
 
-
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent regresar = new Intent(Frutas.this, MenuApp.class);
+                startActivity(regresar);
+            }
+        });
     }
 }
